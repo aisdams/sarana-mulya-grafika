@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function VisionMision() {
   return (
     <div className='w-[min(90%,1280px)] mx-auto mb-44 mt-28'>
-        <h1 className='font-bold text-3xl mb-10 uppercase'>Vision & Mission</h1>
+        <h1 className='font-bold text-3xl mb-10 uppercase border-2 border-b-blueseaprimary w-max'>Vision & Mission</h1>
         <div className="flex relative">
             <div className="w-full">
                 <Image src={VisionMissionImage} alt='' className='w-[85%] bg-cover object-cover object-left h-[30rem]' />

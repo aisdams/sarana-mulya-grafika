@@ -15,7 +15,7 @@ import { Autoplay, Mousewheel, Keyboard } from 'swiper/modules';
 export default function ProductService() {
   return (
     <div className='relative text-center mt-32'>
-        <h1 className='font-bold text-3xl'>Product & Services</h1>
+        <h1 className='font-bold text-3xl uppercase border-2 border-b-blueseaprimary w-max mx-auto mb-3'>Product & Services</h1>
         <h3 className='text-sm font-light'>Complete About Students Advance Course.</h3>
         <div className="flex justify-between">
 

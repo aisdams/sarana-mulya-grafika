@@ -16,7 +16,7 @@ export default function OurValue() {
                 </div>
             </div>
             <div className="ml-5">
-                <h1 className='font-bold text-3xl uppercase mb-5'>Our Value</h1>
+                <h1 className='font-bold text-3xl uppercase mb-5 border-2 border-b-blueseaprimary w-max'>Our Value</h1>
                 <p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
                 <div className=" grid grid-cols-2 items-start gap-5 mt-5">
                     <div className="">

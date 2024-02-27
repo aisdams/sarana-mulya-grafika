@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar/>
       <Header />
       <div className="mx-auto w-[min(90%,1280px)] mb-20">
-        <h1 className="text-3xl font-bold text-center uppercase">Excellence</h1>
+        <h1 className="text-3xl font-bold text-center uppercase border-2 border-b-blueseaprimary w-max mx-auto grid">Excellence</h1>
         <div className="grid grid-cols-3 items-start gap-5 mt-16">
           <div className="flex items-center gap-3">
             <div className="bg-blueseaprimary/50 text-blueseascondary px-3 mx-auto rounded-full w-[50px] h-12">

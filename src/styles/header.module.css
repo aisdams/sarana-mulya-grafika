@@ -1,0 +1,15 @@
+
+.textheader {
+    border-right: 5px solid;
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: trytype 5s infinite, cursor 0.4s step-end infinite alternate;
+  }
+
+  @keyframes trytype {
+    from {
+      width: 0%;
+    }
+  }
+  

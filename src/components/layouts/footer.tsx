@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black/30 backdrop-blur-lg mt-14 p-3 text-sm">
+      <div className="bg-black/30 backdrop-blur-lg mt-20 p-3 text-sm">
         <div className="mx-auto w-[min(90%,1280px)] flex justify-between px-20">
           <h1>Copyright 2024 Sarana Mulya Grafika. All Rights Reserved.</h1>
           <div className="flex gap-3">

@@ -17,6 +17,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import logosmg from '/public/img/smglogo.png';
+import ScrollToTopButton from '@/components/scrollButtonOnTop';
 
 interface Blog {
   id: string;
@@ -91,16 +92,16 @@ export default function Home({
       <main className="relative">
         <Navbar />
         <Header />
-        <div className="relative mb-48">
+        <div className="relative lg:mb-48 mb-10">
           <div className="mx-auto w-[min(90%,1280px)]">
-            <h1 className="font-bold text-center uppercase w-max mx-auto grid text-blueseaprimary">
+            <h1 className="font-bold text-left lg:text-center uppercase w-max lg:mx-auto grid text-blueseaprimary">
               Excellence
             </h1>
-            <p className="text-3xl font-bold text-center uppercase w-max mx-auto grid">
+            <p className="text-3xl font-bold lg:text-center text-left uppercase w-max mx-auto grid">
               Lorem ipsum dolor sit, <br /> amet consectetur adipisicing elit.
               Expedita, culpa.
             </p>
-            <div className="grid grid-cols-3 items-start gap-5 mt-16 mx-auto text-center">
+            <div className="grid lg:grid-cols-3 items-start gap-5 mt-16 mx-auto text-center">
               <div className="grid items-center gap-3">
                 <div className="bg-blueseaprimary/50 text-white px-3 mx-auto rounded-full w-[50px] h-12">
                   <Lightbulb className="text-2xl my-3 mx-auto" />
@@ -139,7 +140,7 @@ export default function Home({
             <Image
               src={ImageExcelence}
               alt=""
-              className="absolute top-0 right-0"
+              className="absolute top-0 lg:right-0 left-auto lg:transform-none lg:scale-0 transform scale-x-[-1]"
             />
           </div>
         </div>
@@ -210,6 +211,7 @@ export default function Home({
             </h3>
           </div>
         </div>
+        <ScrollToTopButton />
         <Footer />
       </main>
     </>

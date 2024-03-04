@@ -31,6 +31,12 @@ export default function ProductService() {
           cssMode={true}
           slidesPerView={3}
           mousewheel={true}
+          breakpoints={{
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+          }}
           loop={true}
           keyboard={true}
           spaceBetween={20}

@@ -30,7 +30,7 @@ export default function About() {
   });
 
   return (
-    <div className="w-full grid grid-cols-2 mt-40 mb-10">
+    <div className="w-full grid grid-cols-2 mt-40 mb-10" id="aboutus">
       <div className="relative">
         <div className="border-[#1a3d86] w-40 h-[30rem]"></div>
         <Image

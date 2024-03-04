@@ -1,28 +1,50 @@
-import React from 'react'
-import VisionMissionImage from '../../../public/img/Vision&Mission.jpg'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import { FaPlay } from 'react-icons/fa';
+import ImgValue from '../../../public/img/imgvalue.jpg';
+import ImgValue2 from '../../../public/img/imgvalue2.jpg';
 
 export default function VisionMision() {
   return (
-    <div className='w-[min(90%,1280px)] mx-auto mb-44 mt-28'>
-        <h1 className='font-bold text-3xl mb-10 uppercase border-2 border-b-blueseaprimary w-max'>Vision & Mission</h1>
-        <div className="flex relative">
-            <div className="w-full">
-                <Image src={VisionMissionImage} alt='' className='w-[85%] bg-cover object-cover object-left h-[30rem]' />
-            </div>
-            <div className="bg-blueseascondary backdrop-blur-md p-5 rounded-md absolute top-60 w-[450px] text-white right-0">
-                <h1 className='font-bold'>Vision</h1>
-                <h3>To be a creative industry company in Indonesia that provides efficient and high-quality services to support your business development.</h3>
-
-                <h1 className='font-bold mt-3'>Misi</h1>
-                <ul className='list-[circle] pl-5'>
-                   <li>Providing excellent and creative design services</li> 
-                   <li>Become a pioneer in application development with the latest technology.</li> 
-                   <li>Build mutually beneficial strategic partnerships with other companies.</li> 
-                   <li>Improve the skills and knowledge of each team member.</li> 
-                </ul>
-            </div>
+    <div className="w-[min(90%,1280px)] mx-auto">
+      <div className="grid grid-cols-2 gap-8 items-center">
+        <div className="ml-5">
+          <h1 className="font-bold text-3xl uppercase mb-5 w-max">
+            Vision & Mission
+          </h1>
+          <p>
+            To be a creative industry company in Indonesia that provides
+            efficient and high-quality services to support your business
+            development.
+          </p>
+          <div className=" grid items-start gap-5 mt-5">
+            <h1 className="font-bold mt-3">Misi</h1>
+            <ul className="list-[circle] pl-5 w-3/4">
+              <li>Providing excellent and creative design services</li>
+              <li>
+                Become a pioneer in application development with the latest
+                technology.
+              </li>
+              <li>
+                Build mutually beneficial strategic partnerships with other
+                companies.
+              </li>
+              <li>Improve the skills and knowledge of each team member.</li>
+            </ul>
+          </div>
         </div>
+        <div className="relative w-full">
+          <Image src={ImgValue} alt="" className="h-[30rem] rounded-xl" />
+          <Image
+            src={ImgValue2}
+            alt=""
+            className="absolute -bottom-10 w-auto h-72 object-contain border-[8px] border-white rounded-md -left-32"
+          />
+          <div className="bg-gray-300 rounded-full border-[8px] -left-10 border-white p-5 absolute top-[40%] mx-auto justify-center text-center">
+            <FaPlay className="text-blueseaprimary text-2xl" />
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

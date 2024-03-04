@@ -21,6 +21,9 @@ const config = {
       colors: {
         blueseaprimary: "#008cd7",
         blueseascondary: "#1a3d86",
+        backgroundlanding: '#0f1a24',
+        greensaggy: "#B3E4FF",
+        purplesecondary: "  ",
         graysmg: '#9f9f9f',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

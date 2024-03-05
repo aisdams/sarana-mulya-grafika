@@ -32,8 +32,20 @@ export default function ProductService() {
           slidesPerView={3}
           mousewheel={true}
           breakpoints={{
-            1024: {
+            320: {
               slidesPerView: 1,
+              spaceBetween: 50,
+            },
+            680: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+            1024: {
+              slidesPerView: 3,
               spaceBetween: 50,
             },
           }}

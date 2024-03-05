@@ -6,8 +6,8 @@ import ImgValue2 from '../../../public/img/imgvalue2.jpg';
 
 export default function VisionMision() {
   return (
-    <div className="w-[min(90%,1280px)] mx-20">
-      <div className="grid lg:grid-cols-2 gap-8 items-center">
+    <div className="w-[min(90%,1280px)] mx-auto">
+      <div className="grid grid-cols-2 gap-8 items-center">
         <div className="ml-5">
           <h1 className="font-bold text-3xl uppercase mb-5 w-max">
             Vision & Mission
@@ -34,13 +34,17 @@ export default function VisionMision() {
           </div>
         </div>
         <div className="relative w-full">
-          <Image src={ImgValue} alt="" className="h-[30rem] rounded-xl" />
+          <Image
+            src={ImgValue}
+            alt=""
+            className="h-[30rem] w-full rounded-xl"
+          />
           <Image
             src={ImgValue2}
             alt=""
             className="absolute -bottom-10 w-auto h-72 object-contain border-[8px] border-white rounded-md lg:-left-32 -right-7"
           />
-          <div className="bg-gray-300 rounded-full border-[8px] lg:-left-10 right-0 border-white p-5 absolute top-[40%] mx-auto justify-center text-center">
+          <div className="bg-gray-300 rounded-full w-max border-[8px] -left-10 border-white p-5 absolute top-[40%] mx-auto justify-center text-center">
             <FaPlay className="text-blueseaprimary text-2xl" />
           </div>
         </div>

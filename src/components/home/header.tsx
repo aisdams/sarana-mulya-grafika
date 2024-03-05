@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className="grid lg:grid-cols-2 items-center justify-between mx-auto gap-5 mb-52">
+    <div className="grid lg:grid-cols-2 items-center justify-between mx-auto gap-5 mb-52 pt-5">
       <div className="pl-20 pt-32 relative">
         <div className="text-5xl font-bold mb-8 flex gap-3">
           Sarana Mulya{' '}

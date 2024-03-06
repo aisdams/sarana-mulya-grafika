@@ -30,8 +30,11 @@ export default function About() {
   });
 
   return (
-    <div className="w-full grid grid-cols-2 mt-40 mb-10" id="aboutus">
-      <div className="relative">
+    <div
+      className="w-[min(90%,1280px)] grid lg:grid-cols-2 mt-40 mb-10 mx-auto"
+      id="aboutus"
+    >
+      <div className="relative lg:grid hidden">
         <div className="border-[#1a3d86] w-40 h-[30rem]"></div>
         <Image
           src={ImageAboutUs}

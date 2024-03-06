@@ -97,7 +97,7 @@ export default function Home({
             <h1 className="font-bold text-left lg:text-center uppercase w-max lg:mx-auto grid text-blueseaprimary">
               Excellence
             </h1>
-            <p className="text-3xl font-bold lg:text-center text-left uppercase w-max mx-auto grid">
+            <p className="text-3xl font-bold lg:text-center text-left uppercase w-full mx-auto grid">
               Lorem ipsum dolor sit, <br /> amet consectetur adipisicing elit.
               Expedita, culpa.
             </p>

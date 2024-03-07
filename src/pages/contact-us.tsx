@@ -29,7 +29,7 @@ export default function Index() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-6 mb-32 font-[sans-serif] text-[#011c2b]">
+      <div className="max-w-6xl mx-auto mt-14 mb-32 font-[sans-serif] text-[#011c2b]">
         <div className="text-center px-6">
           <h2 className="text-3xl font-extrabold text-white">Contact Us</h2>
           <p className="text-sm text-gray-400 mt-3">

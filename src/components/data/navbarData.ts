@@ -18,7 +18,7 @@ const NavbarData = [
   },
   {
     title: 'Product & Service',
-    link: '/productservice',
+    link: '/product-service',
   },
   {
     title: 'Contact',

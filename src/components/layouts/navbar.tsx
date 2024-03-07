@@ -54,15 +54,16 @@ export default function Navbar() {
       {isMobileView ? (
         <div className="flex items-center">
           <Sheet>
-            <SheetTrigger>
+            <SheetTrigger className="flex justify-between items-center gap-8 w-full px-10">
+              <Image src={ImageLogo} alt="" className="w-14 h-14" />
               <IoIosMenu className="text-2xl text-white" />
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetDescription className="grid my-20 text-left gap-7">
+                <SheetDescription className="grid my-20 text-left text-white gap-7">
                   {NavbarData.map((navbar: NavbarItem, idx: number) => (
                     <ul key={idx}>
-                      <li>
+                      <li className="!text-white">
                         <Link
                           href={navbar.link}
                           scroll={false}
@@ -73,14 +74,9 @@ export default function Navbar() {
                             );
                             scrollToElement(navbar.scrollId || '');
                           }}
-                          className="uppercase font-medium text-sm text-[#b7e6bd] tracking-widest flex items-center gap-3"
+                          className="uppercase font-medium text-sm text-white tracking-widest flex items-center gap-3"
                         >
-                          {navbar.title &&
-                            (activeNavItem === idx ? (
-                              <IoIosArrowUp className="arrow" />
-                            ) : (
-                              <IoIosArrowDown className="arrow" />
-                            ))}
+                          {navbar.title}
                         </Link>
                       </li>
                     </ul>

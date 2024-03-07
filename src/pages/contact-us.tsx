@@ -7,7 +7,6 @@ import Navbar from '@/components/layouts/navbar';
 export default function Index() {
   return (
     <>
-      <Navbar />
       <div className="relative">
         <Image
           src={ProfileImage}
@@ -387,7 +386,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

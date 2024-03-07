@@ -90,7 +90,6 @@ export default function Home({
   return (
     <>
       <main className="relative">
-        <Navbar />
         <Header />
         <div className="relative lg:mb-48 mb-10">
           <div className="mx-auto w-[min(90%,1280px)]">
@@ -212,7 +211,6 @@ export default function Home({
           </div>
         </div>
         <ScrollToTopButton />
-        <Footer />
       </main>
     </>
   );

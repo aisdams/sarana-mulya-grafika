@@ -12,7 +12,6 @@ import Footer from '@/components/layouts/footer';
 export default function ProductAndService() {
   return (
     <>
-      <Navbar />
       <div className="relative">
         <Image
           src={ProfileImage}
@@ -37,7 +36,7 @@ export default function ProductAndService() {
       </div>
 
       <h1 className="my-20 text-center text-3xl font-bold">Product Service</h1>
-      <div className="grid grid-cols-3 mx-auto justify-center items-center w-[min(80%,1280px)] gap-5">
+      <div className="grid grid-cols-3 mx-auto justify-center items-start w-[min(80%,1280px)] gap-5">
         <div className="">
           <Image
             src={imageProduct1}
@@ -119,8 +118,6 @@ export default function ProductAndService() {
           </article>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

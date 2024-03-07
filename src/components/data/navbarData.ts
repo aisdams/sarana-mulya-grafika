@@ -14,7 +14,7 @@ const NavbarData = [
   },
   {
     title: 'Information',
-    link: '/Blog',
+    link: '#',
   },
   {
     title: 'Product & Service',

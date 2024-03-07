@@ -9,9 +9,9 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className="grid lg:grid-cols-2 items-center justify-between mx-auto gap-5 mb-52 pt-5">
-      <div className="pl-20 pt-32 relative">
-        <div className="text-5xl font-bold mb-8 flex gap-3">
+    <div className="grid lg:grid-cols-2 items-center justify-between gap-5 mb-52 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full">
+      <div className="pt-32 relative text-center mx-auto justify-center !items-center px-5">
+        <div className="text-5xl font-bold mb-8 flex gap-3 lg:text-left text-center lg:items-left lg:justify-start items-center justify-center">
           Sarana Mulya{' '}
           <h3
             className={['text-blueseaprimary', stylesHeader.textheader].join(
@@ -26,7 +26,7 @@ export default function Header() {
           people in Indonesia to improve the quality level of your business. We
           offer a wide selection of products and services.
         </h3>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 items-center lg:mx-0 mx-auto w-full justify-center items-center">
           <Button className="bg-blueseaprimary text-white tracking-wider h-8">
             Get More
           </Button>

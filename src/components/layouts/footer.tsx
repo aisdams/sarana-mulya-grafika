@@ -27,7 +27,7 @@ export default function Footer() {
           className="w-full object-cover h-[25rem]"
         />
         <div className="bg-[#0f1a24]/55 w-full h-[25rem] absolute top-0">
-          <div className="flex w-[min(90%,1280px)] mx-auto justify-between px-20 items-center gap-10 pt-10">
+          <div className="lg:flex grid w-[min(90%,1280px)] mx-auto justify-between px-20 items-center gap-10 pt-10">
             <div className="border-r-2 border-white/15 pr-44">
               <Image
                 src={LogoImg}
@@ -35,7 +35,7 @@ export default function Footer() {
                 className="w-20 h-20 brightness-0 invert-[100]"
               />
             </div>
-            <div className="flex items-center gap-5">
+            <div className="grid lg:flex items-center gap-5">
               <div className="grid">
                 <h1 className="font-bold text-3xl">News Subscription</h1>
                 <p className="font-light text-sm">
@@ -53,7 +53,7 @@ export default function Footer() {
             </div>
           </div>
           <hr className="w-full h-1 border-white/15 mt-5" />
-          <div className="grid grid-cols-4 gap-5 w-[min(90%,1280px)] mx-auto px-20 mt-20">
+          <div className="grid lg:grid-cols-4 gap-5 w-[min(90%,1280px)] mx-auto px-20 mt-20">
             <div className="w-full">
               <h1 className="font-bold">ABOUT COMPANY</h1>
               <div className="flex items-center">
@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black/30 backdrop-blur-lg mt-20 p-3 text-sm">
+      <div className="bg-black/30 backdrop-blur-lg mt-20 p-3 text-sm lg:grid hidden">
         <div className="mx-auto w-[min(90%,1280px)] flex justify-between px-20">
           <h1>Copyright 2024 Sarana Mulya Grafika. All Rights Reserved.</h1>
           <div className="flex gap-3">

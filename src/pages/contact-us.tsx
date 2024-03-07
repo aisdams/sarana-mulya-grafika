@@ -321,7 +321,7 @@ export default function Index() {
                         htmlFor="radio1"
                         className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
                       >
-                        <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
+                        <span className="border-[4px] border-[#008cd7] rounded-full w-full h-full"></span>
                       </label>
                       <p className="text-sm ml-3 text-white">General Inquiry</p>
                     </div>
@@ -336,7 +336,7 @@ export default function Index() {
                         htmlFor="radio2"
                         className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
                       >
-                        <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
+                        <span className="border-[4px] border-[#008cd7] rounded-full w-full h-full"></span>
                       </label>
                       <p className="text-sm ml-3 text-white">
                         Technical Support
@@ -353,7 +353,7 @@ export default function Index() {
                         htmlFor="radio3"
                         className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
                       >
-                        <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
+                        <span className="border-[4px] border-[#008cd7] rounded-full w-full h-full"></span>
                       </label>
                       <p className="text-sm ml-3 text-white">
                         Website Feedback

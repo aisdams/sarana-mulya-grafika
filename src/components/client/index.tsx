@@ -10,7 +10,7 @@ import { Autoplay, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function Client() {
   return (
-    <div className="flex mx-auto justify-center gap-20 mt-20 mb-32">
+    <div className="grid lg:flex mx-auto justify-center gap-20 mt-20 mb-32">
       <Image
         className="w-32 h-10 object-contain grayscale transition-all duration-500 hover:grayscale-0"
         src={Client1}

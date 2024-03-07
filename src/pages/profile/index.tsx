@@ -1,10 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import ProfileImage from '/public/img/headerprofile.png';
+import Navbar from '@/components/layouts/navbar';
+import Footer from '@/components/layouts/footer';
 
 export default function Profile() {
   return (
     <div className="">
+      <Navbar />
       <div className="relative">
         <Image
           src={ProfileImage}
@@ -26,9 +29,10 @@ export default function Profile() {
           ></path>
         </svg>
       </div>
-      <h1 className="font-bold text-3xl !z-40 mt-20 text-center tracking-widest">
+      <h1 className="font-bold text-3xl !z-40 my-20 text-center tracking-widest">
         Profile Company
       </h1>
+      <Footer />
     </div>
   );
 }

@@ -109,7 +109,7 @@ body {
   bottom: 0;
   transform: skewY(53.5deg);
   transform-origin: top left;
-  transition: \transform0.4s;
+  transition: \transform0.8s;
   background: #0d1720;
   z-index: 1;
 }
@@ -131,7 +131,7 @@ body {
   right: 0;
   bottom: 0;
   padding: 0 30px 30px;
-  transition: \transform0.4s;
+  transition: \transform0.8s;
   transform: translateY(100%);
   z-index: 3;
 }
@@ -141,7 +141,7 @@ body {
   bottom: calc(100% + 30px);
   left: 30px;
   right: 30px;
-  transition: bottom 0.4s;
+  transition: bottom 0.8s;
 }
 
 .card-no {
@@ -163,7 +163,7 @@ body {
   color: white;
   margin-top: 20px;
   line-height: 22px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /* .read-more-btn {
@@ -199,7 +199,7 @@ body {
   bottom: 0;
   background: #1a3d86;
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 0.8s;
 }
 
 /*On hover*/

@@ -16,6 +16,7 @@ import imageProduct4 from '/public/img/Printing-management.jpg';
 import imageProduct5 from '/public/img/event-management.png';
 
 import { Autoplay, Mousewheel, Keyboard } from 'swiper/modules';
+import Link from 'next/link';
 
 export default function ProductService() {
   return (
@@ -53,10 +54,6 @@ export default function ProductService() {
           keyboard={true}
           spaceBetween={20}
           grabCursor={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
           modules={[Mousewheel, Keyboard, Autoplay]}
           pagination={{
             clickable: true,
@@ -64,117 +61,142 @@ export default function ProductService() {
           className="mySwiper mt-10 w-[min(90%,1280px)]"
         >
           <SwiperSlide>
-            <figure className="shape-boxp shape-boxp_half">
-              <Image src={imageProduct1} alt="" />
-              <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
-              <figcaption>
-                <div className="show-cont">
-                  <h3 className="card-no">01</h3>
-                  <h4 className="card-main-title">System management</h4>
-                </div>
-                <p className="card-content-p">
-                  System management is the administration of information
-                  technology (IT) systems in corporate networks or data centers.
-                  An effective systems management plan facilitates the delivery
-                  of IT as a service and enables employees of the organization
-                  to respond quickly to changing business needs and system
-                  activities.
-                </p>
-                <a href="#" className="read-more-btn">
-                  Read More
-                </a>
-              </figcaption>
-              <span className="after"></span>
-            </figure>
+            <Link href="/product-service/detail/system-management">
+              <figure className="shape-boxp shape-boxp_half">
+                <Image src={imageProduct1} alt="" />
+                <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+                <figcaption>
+                  <div className="show-cont">
+                    <h3 className="card-no">01</h3>
+                    <h4 className="card-main-title">System management</h4>
+                  </div>
+                  <p className="card-content-p mb-3">
+                    System management is the administration of information
+                    technology (IT) systems in corporate networks or data
+                    centers. An effective systems management plan facilitates
+                    the delivery of IT as a service and enables employees of the
+                    organization to respond quickly to changing business needs
+                    and system activities.
+                  </p>
+                  <a
+                    href="#"
+                    className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
+                  >
+                    Read More
+                  </a>
+                </figcaption>
+                <span className="after"></span>
+              </figure>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <figure className="shape-boxp shape-boxp_half">
-              <Image src={imageProduct2} alt="" />
-              <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
-              <figcaption>
-                <div className="show-cont">
-                  <h3 className="card-no">02</h3>
-                  <h4 className="card-main-title">Social Media Management</h4>
-                </div>
-                <p className="card-content-p">
-                  A corporate social media management service that includes
-                  planning, creating, and publishing content on all types of
-                  platforms such as Instagram, Facebook, Tiktok, Youtube,
-                  Linkedin, Twitter, etc.
-                </p>
-                <a href="#" className="read-more-btn">
-                  Read More
-                </a>
-              </figcaption>
-              <span className="after"></span>
-            </figure>
+            <Link href="/product-service/detail/social-media-management">
+              <figure className="shape-boxp shape-boxp_half">
+                <Image src={imageProduct2} alt="" />
+                <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+                <figcaption>
+                  <div className="show-cont">
+                    <h3 className="card-no">02</h3>
+                    <h4 className="card-main-title">Social Media Management</h4>
+                  </div>
+                  <p className="card-content-p mb-3">
+                    A corporate social media management service that includes
+                    planning, creating, and publishing content on all types of
+                    platforms such as Instagram, Facebook, Tiktok, Youtube,
+                    Linkedin, Twitter, etc.
+                  </p>
+                  <a
+                    href="#"
+                    className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
+                  >
+                    Read More
+                  </a>
+                </figcaption>
+                <span className="after"></span>
+              </figure>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <figure className="shape-boxp shape-boxp_half">
-              <Image src={imageProduct3} alt="" />
-              <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
-              <figcaption>
-                <div className="show-cont">
-                  <h3 className="card-no">03</h3>
-                  <h4 className="card-main-title">Design Management</h4>
-                </div>
-                <p className="card-content-p">
-                  Is a graphic design and video editing service according to
-                  customer needs. We provide brochure/flyer, company profile,
-                  cartoon, idcard, sticker, banner, neonbox, merchandise,
-                  billboard, and so on.
-                </p>
-                <a href="#" className="read-more-btn">
-                  Read More
-                </a>
-              </figcaption>
-              <span className="after"></span>
-            </figure>
+            <Link href="/product-service/detail/design-management">
+              <figure className="shape-boxp shape-boxp_half">
+                <Image src={imageProduct3} alt="" />
+                <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+                <figcaption>
+                  <div className="show-cont">
+                    <h3 className="card-no">03</h3>
+                    <h4 className="card-main-title">Design Management</h4>
+                  </div>
+                  <p className="card-content-p mb-3">
+                    Is a graphic design and video editing service according to
+                    customer needs. We provide brochure/flyer, company profile,
+                    cartoon, idcard, sticker, banner, neonbox, merchandise,
+                    billboard, and so on.
+                  </p>
+                  <a
+                    href="#"
+                    className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
+                  >
+                    Read More
+                  </a>
+                </figcaption>
+                <span className="after"></span>
+              </figure>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <figure className="shape-boxp shape-boxp_half">
-              <Image src={imageProduct4} alt="" />
-              <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
-              <figcaption>
-                <div className="show-cont">
-                  <h3 className="card-no">04</h3>
-                  <h4 className="card-main-title">Printing Management</h4>
-                </div>
-                <p className="card-content-p">
-                  Is an offset printing and digital printing service. Products
-                  that we can print both offset and digital printing are:
-                  brochure/flyer printing, company profile, cartoonama, idcard,
-                  sticker, banner, neonbox, merchandise, billboard, packaging,
-                  and so on.
-                </p>
-                <a href="#" className="read-more-btn">
-                  Read More
-                </a>
-              </figcaption>
-              <span className="after"></span>
-            </figure>
+            <Link href="/product-service/detail/printing-management">
+              <figure className="shape-boxp shape-boxp_half">
+                <Image src={imageProduct4} alt="" />
+                <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+                <figcaption>
+                  <div className="show-cont">
+                    <h3 className="card-no">04</h3>
+                    <h4 className="card-main-title">Printing Management</h4>
+                  </div>
+                  <p className="card-content-p mb-3">
+                    Is an offset printing and digital printing service. Products
+                    that we can print both offset and digital printing are:
+                    brochure/flyer printing, company profile, cartoonama,
+                    idcard, sticker, banner, neonbox, merchandise, billboard,
+                    packaging, and so on.
+                  </p>
+                  <a
+                    href="#"
+                    className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
+                  >
+                    Read More
+                  </a>
+                </figcaption>
+                <span className="after"></span>
+              </figure>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <figure className="shape-boxp shape-boxp_half">
-              <Image src={imageProduct5} alt="" />
-              <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
-              <figcaption>
-                <div className="show-cont">
-                  <h3 className="card-no">05</h3>
-                  <h4 className="card-main-title">Event management</h4>
-                </div>
-                <p className="card-content-p">
-                  An event management service for exhibitions, training, work
-                  meetings, gatherings, and so on. Exhibition → provides
-                  exhibition management services both at home and abroad
-                  (Exhibition Organizer).
-                </p>
-                <a href="#" className="read-more-btn">
-                  Read More
-                </a>
-              </figcaption>
-              <span className="after"></span>
-            </figure>
+            <Link href="/product-service/detail/event-management">
+              <figure className="shape-boxp shape-boxp_half">
+                <Image src={imageProduct5} alt="" />
+                <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+                <figcaption>
+                  <div className="show-cont">
+                    <h3 className="card-no">05</h3>
+                    <h4 className="card-main-title">Event management</h4>
+                  </div>
+                  <p className="card-content-p mb-3">
+                    An event management service for exhibitions, training, work
+                    meetings, gatherings, and so on. Exhibition → provides
+                    exhibition management services both at home and abroad
+                    (Exhibition Organizer).
+                  </p>
+                  <a
+                    href="#"
+                    className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
+                  >
+                    Read More
+                  </a>
+                </figcaption>
+                <span className="after"></span>
+              </figure>
+            </Link>
           </SwiperSlide>
         </Swiper>
 

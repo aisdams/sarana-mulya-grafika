@@ -9,10 +9,6 @@ const NavbarData = [
     scrollId: 'aboutus',
   },
   {
-    title: 'Profile',
-    link: '/profile',
-  },
-  {
     title: 'Information',
     link: '#',
   },

@@ -9,8 +9,8 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className="grid lg:grid-cols-2 items-center justify-between gap-5 mb-52 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full">
-      <div className="pt-32 relative text-center mx-auto justify-center !items-center px-5">
+    <div className="grid lg:grid-cols-2 items-center justify-between gap-5 mb-52 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full !h-screen">
+      <div className="relative text-center mx-auto justify-start !items-center px-5">
         <div className="text-5xl font-bold mb-8 flex gap-3 lg:text-left text-center lg:items-left lg:justify-start items-center justify-center">
           Sarana Mulya{' '}
           <h3
@@ -21,15 +21,21 @@ export default function Header() {
             Grafika
           </h3>
         </div>
-        <h3 className="text-base font-light mb-8">
+        <h3 className="text-base font-light mb-8 lg:text-left text-center">
           SMG is a company engaged in the creative industry, supporting business
           people in Indonesia to improve the quality level of your business. We
           offer a wide selection of products and services.
         </h3>
-        <div className="flex gap-5 items-center lg:mx-0 mx-auto w-full justify-center items-center">
-          <Button className="bg-blueseaprimary text-white tracking-wider h-8">
-            Get More
-          </Button>
+        <div className="flex gap-5 lg:items-start  items-center mx-0 lg:mx-0 mx-auto w-full lg:justify-start justify-center lg:items-center">
+          <a
+            href="#_"
+            className="relative inline-flex items-center justify-start text-white px-6 py-1 overflow-hidden font-medium transition-all bg-blueseaprimary rounded hover:bg-white group"
+          >
+            <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#01324d] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+            <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">
+              Get More
+            </span>
+          </a>
           <div className="flex items-center gap-2">
             <Image src={BtnPlay} alt="" className="w-8 h-8" />
             <h1>See How We Work</h1>
@@ -49,7 +55,7 @@ export default function Header() {
         </div>
       </div>
       <div className="absolute -top-8 right-0 z-[-5] lg:grid hidden">
-        <Image src={ImageHeader} alt="" className="h-[30rem] w-[45rem]" />
+        <Image src={ImageHeader} alt="" className="h-[36rem] w-[50rem]" />
       </div>
     </div>
   );

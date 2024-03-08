@@ -90,7 +90,7 @@ export default function Navbar() {
         <div
           className={`${
             scrolled ? 'top-0' : ''
-          } w-full bg-black/10 backdrop-blur-lg text-white w-full !z-20 fixed`}
+          } w-full bg-black/10 backdrop-blur-lg text-white w-full !z-20 fixed -top-2 p-2`}
         >
           <div className="lg:flex grid justify-between items-center mx-auto lg:w-[min(90%,1280px)]">
             <div className="">

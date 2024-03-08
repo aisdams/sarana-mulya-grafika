@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import ProfileImage from '/public/img/headerprofile.png';
+import contactImage from '/public/img/contactus.jpg';
 import Footer from '@/components/layouts/footer';
 import Navbar from '@/components/layouts/navbar';
 
@@ -9,7 +9,7 @@ export default function Index() {
     <>
       <div className="relative">
         <Image
-          src={ProfileImage}
+          src={contactImage}
           alt=""
           className="z-0 w-full h-[min(100vh,25.5rem)] bg-cover object-cover bg-fixed bg-no-repeat"
         />

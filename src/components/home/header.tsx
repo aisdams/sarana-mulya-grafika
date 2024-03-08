@@ -8,6 +8,12 @@ import stylesHeader from '../../styles/header.module.css';
 import Link from 'next/link';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const videoUrl = 'https://www.youtube.com/embed/0wybm4HFvd4';
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="grid lg:grid-cols-2 items-center justify-between gap-5 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full !h-screen">
       <div className="relative text-center mx-auto justify-start !items-center px-5">
@@ -36,7 +42,10 @@ export default function Header() {
               Get More
             </span>
           </a>
-          <div className="flex items-center gap-2">
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={togglePopup}
+          >
             <Image src={BtnPlay} alt="" className="w-8 h-8" />
             <h1>See How We Work</h1>
           </div>
@@ -57,6 +66,34 @@ export default function Header() {
       <div className="absolute -top-8 right-0 z-[-5] lg:grid hidden">
         <Image src={ImageHeader} alt="" className="h-[36rem] w-[50rem]" />
       </div>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-50"
+          style={{ overflow: 'hidden' }}
+        >
+          <div
+            className="absolute inset-0 bg-black opacity-75"
+            onClick={togglePopup}
+          ></div>
+          <div className="z-10 bg-white p-4 rounded-lg shadow-lg w-2/3 relative">
+            <button
+              onClick={togglePopup}
+              className="absolute -top-9 right-0 text-white"
+            >
+              <h1 className="text-xl">X</h1>
+            </button>
+            <iframe
+              src={videoUrl}
+              style={{ width: '100%' }}
+              height="500"
+              frameBorder="0"
+              allowFullScreen
+              title="YouTube Video"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

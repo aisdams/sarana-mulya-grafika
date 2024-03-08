@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  srabu-frontend:
+    container_name: smg-company-profile
+    image: smg-company-profile
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - '3024:3024'

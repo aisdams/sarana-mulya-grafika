@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
-import ProfileImage from '/public/img/headerprofile.png';
-import ServiceImageDetail from '/public/img/servicedetail.jpg';
+import productImage from '/public/img/headerprofile.png';
+import ServiceImageDetail from '/public/img/productservice.jpg';
 import { Button } from '@/components/ui/button';
 import { Lightbulb, Webhook } from 'lucide-react';
 import ImageCommunication from '/public/img/communication.jpg';
@@ -12,7 +12,7 @@ export default function Index() {
     <div>
       <div className="relative">
         <Image
-          src={ProfileImage}
+          src={productImage}
           alt=""
           className="z-0 w-full h-[min(100vh,25.5rem)] bg-cover object-cover bg-fixed bg-no-repeat"
         />

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/layouts/navbar';
-import ProfileImage from '/public/img/headerprofile.png';
+import productImage from '/public/img/productservice.jpg';
 import imageProduct1 from '/public/img/System-Management-.jpg';
 import imageProduct2 from '/public/img/social-media-mangement.jpg';
 import imageProduct3 from '/public/img/design-management.jpg';
@@ -15,7 +15,7 @@ export default function ProductAndService() {
     <>
       <div className="relative">
         <Image
-          src={ProfileImage}
+          src={productImage}
           alt=""
           className="z-0 w-full h-[min(100vh,25.5rem)] bg-cover object-cover bg-fixed bg-no-repeat"
         />

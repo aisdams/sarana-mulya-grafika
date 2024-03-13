@@ -90,25 +90,50 @@ export default function Footer() {
                 <div className="rounded-full w-2 h-2 bg-white"></div>
               </div>
               <ul className="w-full mt-5 gap-2 grid">
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  About Us
+                <li>
+                  <Link
+                    href="#aboutus"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    About Us
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Meet Our Team
+                <li>
+                  <Link
+                    href="information/#team"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Meet Our Team
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Our Projects
+                <li>
+                  <Link
+                    href="product-service"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Product & Service
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Help & FAQs
+                <li>
+                  <Link
+                    href="#"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Help & FAQs
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Contact Us
+                <li>
+                  <Link
+                    href="contact-us"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -119,25 +144,50 @@ export default function Footer() {
                 <div className="rounded-full w-2 h-2 bg-white"></div>
               </div>
               <ul className="w-full mt-5 gap-2 grid">
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  System management
+                <li>
+                  <Link
+                    href="product-service/detail/system-management"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    System management
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Social Media Management
+                <li>
+                  <Link
+                    href="product-service/detail/social-media-management"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Social Media Management
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Design Management
+                <li>
+                  <Link
+                    href="product-service/detail/design-management"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Design Management
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  Printing Management
+                <li>
+                  <Link
+                    href="product-service/detail/printing-management"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Printing Management
+                  </Link>
                 </li>
-                <li className="flex gap-2 items-center font-light text-sm">
-                  <IoIosArrowForward />
-                  vent management
+                <li>
+                  <Link
+                    href="product-service/detail/event-management"
+                    className="flex gap-2 items-center font-light text-sm"
+                  >
+                    <IoIosArrowForward />
+                    Event management
+                  </Link>
                 </li>
               </ul>
             </div>

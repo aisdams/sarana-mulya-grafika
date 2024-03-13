@@ -19,7 +19,6 @@ import { useState } from 'react';
 import logosmg from '/public/img/smglogo.png';
 import ScrollToTopButton from '@/components/scrollButtonOnTop';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 
 import 'swiper/css';
@@ -97,14 +96,14 @@ export default function Home({
     <>
       <main className="relative">
         <Header />
-        <div className="relative lg:mb-48 mb-10">
+        <div className="relative lg:mb-10 mb-10">
           <div className="mx-auto w-[min(90%,1280px)]">
             <h1 className="font-bold text-left lg:text-center uppercase w-max lg:mx-auto grid text-blueseaprimary">
               Excellence
             </h1>
             <p className="text-3xl font-bold lg:text-center text-left uppercase w-full mx-auto grid">
-              Lorem ipsum dolor sit, <br /> amet consectetur adipisicing elit.
-              Expedita, culpa.
+              Our company will always provide satisfaction <br /> and comfort
+              for our customers
             </p>
             <div className="grid lg:grid-cols-3 items-start gap-5 mt-16 mx-auto text-center">
               <div className="grid items-center gap-3">
@@ -152,64 +151,54 @@ export default function Home({
         <About />
         <VisionMision />
         <ProductService />
-        <div className="grid w-[min(90%,1280px)] mx-auto justify-center items-center mt-20">
+        <div className="grid w-[min(90%,1280px)] mx-auto justify-center items-center mt-10">
           <h3 className="text-center text-blueseaprimary">NEWS & ARTICLES</h3>
           <h1 className="text-center font-bold text-3xl">
             Get Every Single Update{' '}
             <span className="text-blueseaprimary">Blog</span>
           </h1>
 
-          <Swiper
-            pagination={{
-              dynamicBullets: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <div className="mb-5 mt-10 grid lg:grid-cols-3 gap-8 mx-auto">
-                {blogs.map((blog) => (
-                  <article
-                    key={blog.id}
-                    className="pb-10 rounded-tl-xl rounded-tr-xl overflow-hidden prose prose-lg"
+          <div className="mb-20 mt-10 grid lg:grid-cols-3 gap-8 mx-auto">
+            {blogs.map((blog) => (
+              <article
+                key={blog.id}
+                className="pb-10 rounded-tl-xl rounded-tr-xl overflow-hidden prose prose-lg"
+              >
+                <Image
+                  src={blog.thumbnailSrc}
+                  alt=""
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-56 mb-3"
+                />
+                <div className="grid pl-5">
+                  <h3 className="font-light text-sm text-right mb-2">
+                    {formatDate(blog.createdAt)}
+                  </h3>
+                  <div
+                    className="font-bold text-base-blue text-xl tracking-wider cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigateToBlogDetail(blog.slug);
+                    }}
                   >
-                    <Image
-                      src={blog.thumbnailSrc}
-                      alt=""
-                      width={400}
-                      height={200}
-                      className="object-cover w-full h-56 mb-3"
-                    />
-                    <div className="grid pl-5">
-                      <h3 className="font-light text-sm text-right mb-2">
-                        {formatDate(blog.createdAt)}
-                      </h3>
-                      <div
-                        className="font-bold text-base-blue text-xl tracking-wider cursor-pointer"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigateToBlogDetail(blog.slug);
-                        }}
-                      >
-                        {blog.title}
-                      </div>
-                      <div
-                        className="font-light text-sm mt-3"
-                        dangerouslySetInnerHTML={{ __html: blog.content }}
-                      ></div>
+                    {blog.title}
+                  </div>
+                  <div
+                    className="font-light text-sm mt-3"
+                    dangerouslySetInnerHTML={{ __html: blog.content }}
+                  ></div>
 
-                      <div className="flex justify-between items-center mt-5">
-                        <Image src={logosmg} alt="" className="w-10 h-10" />
-                        <h1 className="font-light text-sm border-b-white border border-t-transparent border-l-transparent border-r-transparent">
-                          Read more
-                        </h1>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </SwiperSlide>
-          </Swiper>
+                  <div className="flex justify-between items-center mt-5">
+                    <Image src={logosmg} alt="" className="w-10 h-10" />
+                    <h1 className="font-light text-sm border-b-white border border-t-transparent border-l-transparent border-r-transparent">
+                      Read more
+                    </h1>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
         <OurValue />
 
@@ -231,3 +220,5 @@ export default function Home({
     </>
   );
 }
+// pak maaf saya ingin mengajukan negosiasi
+// projectnya kerena saya tidak mengerti bet tetapi saya akan memasangkan game request nya

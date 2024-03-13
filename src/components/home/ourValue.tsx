@@ -7,7 +7,7 @@ import ImgValue2 from '../../../public/img/imgvalue2.jpg';
 
 export default function OurValue() {
   return (
-    <div className="mt-10 relative">
+    <div className="relative">
       {/* <h1 className="font-bold text-3xl mb-5 uppercase text-left tracking-widest w-[min(80%,1280px)] mx-auto">
         NICE
       </h1> */}

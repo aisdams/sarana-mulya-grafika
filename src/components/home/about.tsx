@@ -8,26 +8,44 @@ function classNames(...classes: any) {
 }
 
 export default function About() {
-  let [categories] = useState({
-    LoremIpsum: [
-      {
-        id: 1,
-        title: 'Does drinking coffee make you smarter?',
-        date: '5h ago',
-        commentCount: 5,
-        shareCount: 2,
-      },
-    ],
-    LoremDollar: [
-      {
-        id: 1,
-        title: 'Is tech making coffee better or worse?',
-        date: 'Jan 7',
-        commentCount: 29,
-        shareCount: 16,
-      },
-    ],
-  });
+  // let [categories] = useState({
+  //   'System Management': [
+  //     {
+  //       id: 1,
+  //       title: 'Does drinking coffee make you smarter?',
+  //       date: '5h ago',
+  //       commentCount: 5,
+  //       shareCount: 2,
+  //     },
+  //   ],
+  //   'Social Media Management': [
+  //     {
+  //       id: 1,
+  //       title: 'Is tech making coffee better or worse?',
+  //       date: 'Jan 7',
+  //       commentCount: 29,
+  //       shareCount: 16,
+  //     },
+  //   ],
+  //   'Design Management': [
+  //     {
+  //       id: 1,
+  //       title: 'Is tech making coffee better or worse?',
+  //       date: 'Jan 7',
+  //       commentCount: 29,
+  //       shareCount: 16,
+  //     },
+  //   ],
+  //   'Printing managemen': [
+  //     {
+  //       id: 1,
+  //       title: 'Is tech making coffee better or worse?',
+  //       date: 'Jan 7',
+  //       commentCount: 29,
+  //       shareCount: 16,
+  //     },
+  //   ],
+  // });
 
   return (
     <div
@@ -49,20 +67,45 @@ export default function About() {
           ABOUT WEBTECK IT SOLUTIONS We Are Increasing Business Success With{' '}
           <span className="text-blueseaprimary">Technology</span>
         </div>
-        <h3 className="mb-3 font-light">
+        <h3 className="mb-3 font-light text-sm">
           Sarana Mulya Grafika or SMG is a company engaged in the creative
           industry, supporting business people in Indonesia to increase the
           quality level of your business. We offer a wide selection of products
-          and services.
+          and services
         </h3>
-        <h3 className="font-light">
-          We are committed to providing innovative solutions that can improve
-          your company{`'`}s competitiveness because the success of your company
-          is our top priority.
-        </h3>
-
+        <ul className="list-[circle] gap-5">
+          <li className=" text-sm mb-2">
+            <span className="font-bold">First</span>, System Management, in the
+            ever-evolving digital era, efficient system management is essential.
+            We provide leading solutions to help your business manage and
+            optimize every process with efficiency and accuracy.
+          </li>
+          <li className=" text-sm mb-2">
+            <span className="font-bold">Secondly</span>, Social Media Management
+            in managing social media, we take the role as a partner, with a
+            mature strategy, creative content, we help build a strong image of
+            your business
+          </li>
+          <li className=" text-sm mb-2">
+            <span className="font-bold">Thirdly</span>, our Design Management is
+            not just about creating attractive visuals, but we can also convey
+            the message and content of an image to the heart of the audience.
+          </li>
+          <li className=" text-sm mb-2">
+            <span className="font-bold">Fourth</span>, Printing management our
+            commitment to quality is reflected in our printing services. Each
+            print is a work of art produced with the finest detail and utmost
+            attention to quality
+          </li>
+          <li className=" text-sm">
+            <span className="font-bold">Fifth</span>, Event management is one of
+            our distinguishing skills, from concept to execution, we work on
+            every detail to create an extraordinary experience, your event is
+            not just an event but a story that we help create together.
+          </li>
+        </ul>
         <div className="w-full mt-3 lg:p-2">
-          <Tab.Group>
+          {/* <Tab.Group>
             <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
               {Object.keys(categories).map((category) => (
                 <Tab
@@ -110,7 +153,7 @@ export default function About() {
                 </Tab.Panel>
               ))}
             </Tab.Panels>
-          </Tab.Group>
+          </Tab.Group> */}
         </div>
       </div>
     </div>

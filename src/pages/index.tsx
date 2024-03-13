@@ -18,6 +18,12 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import logosmg from '/public/img/smglogo.png';
 import ScrollToTopButton from '@/components/scrollButtonOnTop';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 interface Blog {
   id: string;
@@ -153,47 +159,57 @@ export default function Home({
             <span className="text-blueseaprimary">Blog</span>
           </h1>
 
-          <div className="mb-20 mt-10 grid lg:grid-cols-3 gap-8 mx-auto">
-            {blogs.map((blog) => (
-              <article
-                key={blog.id}
-                className="pb-10 rounded-tl-xl rounded-tr-xl overflow-hidden  prose prose-lg"
-              >
-                <Image
-                  src={blog.thumbnailSrc}
-                  alt=""
-                  width={400}
-                  height={200}
-                  className="object-cover w-full h-56 mb-3"
-                />
-                <div className="grid pl-5">
-                  <h3 className="font-light text-sm text-right mb-2">
-                    {formatDate(blog.createdAt)}
-                  </h3>
-                  <div
-                    className="font-bold text-base-blue text-xl tracking-wider cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      navigateToBlogDetail(blog.slug);
-                    }}
+          <Swiper
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="mb-5 mt-10 grid lg:grid-cols-3 gap-8 mx-auto">
+                {blogs.map((blog) => (
+                  <article
+                    key={blog.id}
+                    className="pb-10 rounded-tl-xl rounded-tr-xl overflow-hidden prose prose-lg"
                   >
-                    {blog.title}
-                  </div>
-                  <div
-                    className="font-light text-sm mt-3"
-                    dangerouslySetInnerHTML={{ __html: blog.content }}
-                  ></div>
+                    <Image
+                      src={blog.thumbnailSrc}
+                      alt=""
+                      width={400}
+                      height={200}
+                      className="object-cover w-full h-56 mb-3"
+                    />
+                    <div className="grid pl-5">
+                      <h3 className="font-light text-sm text-right mb-2">
+                        {formatDate(blog.createdAt)}
+                      </h3>
+                      <div
+                        className="font-bold text-base-blue text-xl tracking-wider cursor-pointer"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigateToBlogDetail(blog.slug);
+                        }}
+                      >
+                        {blog.title}
+                      </div>
+                      <div
+                        className="font-light text-sm mt-3"
+                        dangerouslySetInnerHTML={{ __html: blog.content }}
+                      ></div>
 
-                  <div className="flex justify-between items-center mt-5">
-                    <Image src={logosmg} alt="" className="w-10 h-10" />
-                    <h1 className="font-light text-sm border-b-white border border-t-transparent border-l-transparent border-r-transparent">
-                      Read more
-                    </h1>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
+                      <div className="flex justify-between items-center mt-5">
+                        <Image src={logosmg} alt="" className="w-10 h-10" />
+                        <h1 className="font-light text-sm border-b-white border border-t-transparent border-l-transparent border-r-transparent">
+                          Read more
+                        </h1>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <OurValue />
 
@@ -215,5 +231,3 @@ export default function Home({
     </>
   );
 }
-// pak maaf saya ingin mengajukan negosiasi
-// projectnya kerena saya tidak mengerti bet tetapi saya akan memasangkan game request nya

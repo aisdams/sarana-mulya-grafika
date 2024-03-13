@@ -53,8 +53,12 @@ export default function ProductService() {
           }}
           loop={true}
           keyboard={true}
-          spaceBetween={20}
+          spaceBetween={10}
           navigation={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           grabCursor={true}
           modules={[Mousewheel, Keyboard, Autoplay, Navigation]}
           pagination={{

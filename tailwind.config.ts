@@ -19,10 +19,11 @@ const config = {
     },
     extend: {
       colors: {
-        blueseaprimary: '#008cd7',
-        blueseascondary: '#1a3d86',
-        backgroundlanding: '#0f1a24',
+        blueseaprimary: '#038cd7',
+        blueseascondary: '#163879',
+        backgroundlanding: '#011636',
         greensaggy: '#B3E4FF',
+        greysmg: 'a09fa3',
         purplesecondary: '  ',
         graysmg: '#9f9f9f',
         border: 'hsl(var(--border))',

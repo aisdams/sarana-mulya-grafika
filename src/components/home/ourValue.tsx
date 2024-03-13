@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaPlay } from 'react-icons/fa';
 import ImgValue from '../../../public/img/imgvalue.jpg';
-import NiceImage from '/public/img/nice1.png';
+import NiceImage from '/public/img/nice1hd.png';
 import ImgValue2 from '../../../public/img/imgvalue2.jpg';
 
 export default function OurValue() {

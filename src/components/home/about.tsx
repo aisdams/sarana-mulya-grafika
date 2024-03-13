@@ -61,7 +61,7 @@ export default function About() {
           is our top priority.
         </h3>
 
-        <div className="lg:w-4/5 w-full mt-3 lg:p-2">
+        <div className="w-full mt-3 lg:p-2">
           <Tab.Group>
             <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
               {Object.keys(categories).map((category) => (

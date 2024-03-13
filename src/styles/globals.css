@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --swiper-navigation-size: 20px;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -64,6 +65,10 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+}
+
+:root {
+  --swiper-navigation-size: 20px;
 }
 
 @layer base {
@@ -217,4 +222,26 @@ body {
 
 .shape-boxp_half:hover > .after {
   opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: #008cd7;
+  border-radius: 50%;
+  font-size: 10px !important;
+  width: 40px !important;
+}
+.swiper-container {
+  margin-top: 50px;
+  position: relative;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+}
+
+::ng-deep .swiper-button-prev:after,
+::ng-deep .swiper-button-next:after {
+  --swiper-navigation-size: 15px;
 }

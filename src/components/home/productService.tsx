@@ -15,7 +15,8 @@ import imageProduct3 from '/public/img/design-management.jpg';
 import imageProduct4 from '/public/img/Printing-management.jpg';
 import imageProduct5 from '/public/img/event-management.png';
 
-import { Autoplay, Mousewheel, Keyboard } from 'swiper/modules';
+import { Autoplay, Mousewheel, Keyboard, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 import Link from 'next/link';
 
 export default function ProductService() {
@@ -53,16 +54,17 @@ export default function ProductService() {
           loop={true}
           keyboard={true}
           spaceBetween={20}
+          navigation={true}
           grabCursor={true}
-          modules={[Mousewheel, Keyboard, Autoplay]}
+          modules={[Mousewheel, Keyboard, Autoplay, Navigation]}
           pagination={{
             clickable: true,
           }}
           className="mySwiper mt-10 w-[min(90%,1280px)]"
         >
           <SwiperSlide>
-            <Link href="/product-service/detail/system-management">
-              <figure className="shape-boxp shape-boxp_half">
+            <figure className="shape-boxp shape-boxp_half">
+              <Link href="/product-service/detail/system-management">
                 <Image src={imageProduct1} alt="" />
                 <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
                 <figcaption>
@@ -78,20 +80,20 @@ export default function ProductService() {
                     organization to respond quickly to changing business needs
                     and system activities.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </figcaption>
                 <span className="after"></span>
-              </figure>
-            </Link>
+              </Link>
+            </figure>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="/product-service/detail/social-media-management">
-              <figure className="shape-boxp shape-boxp_half">
+            <figure className="shape-boxp shape-boxp_half">
+              <Link href="/product-service/detail/social-media-management">
                 <Image src={imageProduct2} alt="" />
                 <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
                 <figcaption>
@@ -105,20 +107,20 @@ export default function ProductService() {
                     platforms such as Instagram, Facebook, Tiktok, Youtube,
                     Linkedin, Twitter, etc.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </figcaption>
                 <span className="after"></span>
-              </figure>
-            </Link>
+              </Link>
+            </figure>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="/product-service/detail/design-management">
-              <figure className="shape-boxp shape-boxp_half">
+            <figure className="shape-boxp shape-boxp_half">
+              <Link href="/product-service/detail/design-management">
                 <Image src={imageProduct3} alt="" />
                 <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
                 <figcaption>
@@ -132,20 +134,20 @@ export default function ProductService() {
                     cartoon, idcard, sticker, banner, neonbox, merchandise,
                     billboard, and so on.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </figcaption>
                 <span className="after"></span>
-              </figure>
-            </Link>
+              </Link>
+            </figure>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="/product-service/detail/printing-management">
-              <figure className="shape-boxp shape-boxp_half">
+            <figure className="shape-boxp shape-boxp_half">
+              <Link href="/product-service/detail/printing-management">
                 <Image src={imageProduct4} alt="" />
                 <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
                 <figcaption>
@@ -160,20 +162,20 @@ export default function ProductService() {
                     idcard, sticker, banner, neonbox, merchandise, billboard,
                     packaging, and so on.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </figcaption>
                 <span className="after"></span>
-              </figure>
-            </Link>
+              </Link>
+            </figure>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="/product-service/detail/event-management">
-              <figure className="shape-boxp shape-boxp_half">
+            <figure className="shape-boxp shape-boxp_half">
+              <Link href="/product-service/detail/event-management">
                 <Image src={imageProduct5} alt="" />
                 <div className="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
                 <figcaption>
@@ -187,16 +189,16 @@ export default function ProductService() {
                     exhibition management services both at home and abroad
                     (Exhibition Organizer).
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="read-more-btn mt-4 hover:border-b-white hover:border-b-2 font-light transition-all duration-300 text-sm"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </figcaption>
                 <span className="after"></span>
-              </figure>
-            </Link>
+              </Link>
+            </figure>
           </SwiperSlide>
         </Swiper>
 

@@ -24,9 +24,9 @@ export default function Footer() {
         <Image
           src={ImageFooter}
           alt=""
-          className="w-full object-cover h-[25rem]"
+          className="w-full object-cover h-[30rem]"
         />
-        <div className="bg-[#0f1a24]/55 w-full h-[25rem] absolute top-0">
+        <div className="bg-[#0f1a24]/60 w-full h-[30rem] absolute top-0">
           <div className="lg:flex grid w-[min(90%,1280px)] mx-auto justify-between px-20 items-center gap-10 pt-10">
             <div className="border-r-2 border-white/15 pr-44">
               <Image
@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black/30 backdrop-blur-lg mt-20 p-3 text-sm lg:grid hidden">
+      <div className="bg-black/30 backdrop-blur-lg  p-3 text-sm lg:grid hidden">
         <div className="mx-auto w-[min(90%,1280px)] flex justify-between px-20">
           <h1>Copyright 2024 Sarana Mulya Grafika. All Rights Reserved.</h1>
           <div className="flex gap-3">

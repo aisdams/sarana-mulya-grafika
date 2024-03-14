@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
-import productImage from '/public/img/productservice.jpg';
+import productImage from '/public/img/Printing-management.jpg';
 import ServiceImageDetail from '/public/img/servicedetail.jpg';
 import { Button } from '@/components/ui/button';
 import { Lightbulb, Webhook } from 'lucide-react';
@@ -22,17 +22,6 @@ export default function Index() {
           </h1>
         </div>
       </div>
-
-      {/* <div className="absolute bottom-[30%] mx-auto w-full z-40">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
-          <path
-            fill="#0f1a24"
-            fill-opacity="1"
-            d="M0,64L48,64C96,64,192,64,288,69.3C384,75,480,85,576,96C672,107,768,117,864,133.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
-      </div> */}
-
       <div className="lg:flex flex-1 w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-20">
         <Image
           src={ServiceImageDetail}
@@ -100,7 +89,7 @@ export default function Index() {
                 </ul>
               </div>
               <div className="">
-                <h1 className="text-xl font-bold mt-3">keunggulan :</h1>
+                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
                   <li>Dashboard </li>
                   <li>Customizable </li>
@@ -130,7 +119,7 @@ export default function Index() {
                 </ul>
               </div>
               <div className="">
-                <h1 className="text-xl font-bold mt-3">keunggulan :</h1>
+                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
                   <li>Dashboard </li>
                   <li>Customizable </li>
@@ -160,7 +149,7 @@ export default function Index() {
                 </ul>
               </div>
               <div className="">
-                <h1 className="text-xl font-bold mt-3">keunggulan :</h1>
+                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
                   <li>Dashboard </li>
                   <li>Customizable </li>

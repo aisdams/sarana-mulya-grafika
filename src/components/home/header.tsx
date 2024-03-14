@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import RobotGif from '/public/img/robot.gif';
 import BtnPlay from '/public/img/btnplayhead.png';
+import ImageHeader from '/public/img/header1.png';
 import React, { useEffect, useState } from 'react';
 import ImageScrol from '/public/img/buttonscroll.svg';
-import ImageHeader from '/public/img/company-header.png';
 import stylesHeader from '../../styles/header.module.css';
 
 export default function Header() {
@@ -64,7 +64,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div className="absolute -top-8 right-0 z-[-5] lg:grid hidden">
+      <div className="absolute top-0 right-0 z-[-5] lg:grid hidden">
         <Image src={ImageHeader} alt="" className="h-[36rem] w-[50rem]" />
       </div>
 

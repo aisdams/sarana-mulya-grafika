@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
-import productImage from '/public/img/productservice.jpg';
+import productImage from '/public/img/technologyimage.png';
 import ServiceImageDetail from '/public/img/servicedetail.jpg';
 import { Button } from '@/components/ui/button';
 import { Lightbulb, Webhook } from 'lucide-react';
@@ -100,7 +100,7 @@ export default function Index() {
                 </ul>
               </div>
               <div className="">
-                <h1 className="text-xl font-bold mt-3">keunggulan :</h1>
+                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
                   <li>Dashboard </li>
                   <li>Customizable </li>
@@ -130,7 +130,7 @@ export default function Index() {
                 </ul>
               </div>
               <div className="">
-                <h1 className="text-xl font-bold mt-3">keunggulan :</h1>
+                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
                   <li>Dashboard </li>
                   <li>Customizable </li>
@@ -160,7 +160,7 @@ export default function Index() {
                 </ul>
               </div>
               <div className="">
-                <h1 className="text-xl font-bold mt-3">keunggulan :</h1>
+                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
                   <li>Dashboard </li>
                   <li>Customizable </li>

@@ -61,100 +61,38 @@ export default function Index() {
       </div>
 
       <div className="grid lg:grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-10">
-        <div className="text-justify">
-          <h1 className="font-bold text-3xl">System Management</h1>
+        <div className="">
+          <h1 className="font-bold text-3xl">Design Management</h1>
           <h3 className="font-light text-sm">
-            Management systems describe the way companies organize themselves in
-            their structures and processes to act systematically, ensure smooth
-            processes, and achieve planned results. Modern management systems
-            usually follow the PDCA (Plan-Do-Check-Act) cycle of planning,
-            implementing, reviewing, and improving.
+            Is a graphic design and video editing service according to customer
+            needs. We provide brochure/flyer, company profile, cartoon, idcard,
+            sticker, banner, neonbox, merchandise, billboard, and so on.
           </h3>
           <div className="mt-5">
-            <h1 className="font-bold">Warehouse Management System (WMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
             <div className="grid grid-cols-2">
               <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="">
-            <h1 className="mt-5 font-bold">Logistic Management System (LMS)</h1>
-            <p>
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-5">
-            <h1 className="font-bold">Sales Management System (SMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
+                <h1 className="text-xl font-bold mt-3">Include </h1>
+                <ul className="list-[circle] ml-5 font-light text-sm flex gap-8">
+                  <div>
+                    <li>Design</li>
+                    <li>2x Revisi</li>
+                    <li>
+                      7 working days, exclude revisions (for brochures, business
+                      cards, ID cards, stickers)
+                    </li>
+                    <li>14 Working days, exclude revision (for compro)</li>
+                    <li>Softfile</li>
+                    <li>Storyboard</li>
+                  </div>
+                  <div>
+                    <li>Filming</li>
+                    <li>Editing</li>
+                    <li>Music</li>
+                    <li>
+                      15 working days only editing, exclude revision (for video)
+                    </li>
+                    <li>Outro & Intro</li>
+                  </div>
                 </ul>
               </div>
             </div>

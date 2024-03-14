@@ -62,101 +62,88 @@ export default function Index() {
 
       <div className="grid lg:grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-10">
         <div className="text-justify">
-          <h1 className="font-bold text-3xl">System Management</h1>
+          <h1 className="font-bold text-3xl">Event management</h1>
           <h3 className="font-light text-sm">
-            Management systems describe the way companies organize themselves in
-            their structures and processes to act systematically, ensure smooth
-            processes, and achieve planned results. Modern management systems
-            usually follow the PDCA (Plan-Do-Check-Act) cycle of planning,
-            implementing, reviewing, and improving.
+            An event management service for exhibitions, training, work
+            meetings, gatherings, and so on.
           </h3>
-          <div className="mt-5">
-            <h1 className="font-bold">Warehouse Management System (WMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
+          <div>
+            <h1 className="font-bold my-3">
+              Exhibition → provides exhibition management services both at home
+              and abroad (Exhibition Organizer).
+            </h1>
+            <div className="flex gap-8 items-start">
+              <div className="ml-5">
+                <h1>Domestic exhibition</h1>
+                <ul className="list-[circle]">
+                  <li>Space booth (9sqm - 18sqm)</li>
+                  <li>Special design/standard booth</li>
                 </ul>
               </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
+              <div className=" ml-5">
+                <h1>Overseas exhibition (Adjustable by request) </h1>
+                <ul className="list-[circle]">
+                  <li>Space booth</li>
+                  <li>Special design/standard booth</li>
+                  <li>Ticket</li>
+                  <li>Hotel</li>
+                  <li>City Tour</li>
+                  <li>Transportation</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="">
-            <h1 className="mt-5 font-bold">Logistic Management System (LMS)</h1>
-            <p>
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
+          <div>
+            <h1 className="font-bold my-3">
+              Meeting Organizer → Company meeting management service (Meeting
+              Organizer). Include :
+            </h1>
+            <div className="ml-5">
+              <ul className="list-[circle]">
+                <li>Hotel</li>
+                <li>Backdrop</li>
+                <li>MC</li>
+                <li>Photographer & Videographer</li>
+              </ul>
             </div>
           </div>
 
-          <div className="mt-5">
-            <h1 className="font-bold">Sales Management System (SMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
+          <div>
+            <h1 className="font-bold my-3">
+              Training → corporate training management services (Training
+              Organizer). Include:
+            </h1>
+            <div className="ml-5">
+              <ul className="list-[circle]">
+                <li>Hotel</li>
+                <li>Backdrop</li>
+                <li>MC</li>
+                <li>Photographer & Videographer</li>
+                <li>Ice Breaking</li>
+                <li>Training (collab by Inspiry)</li>
+                <li>Entertainment → Gala dinner, pentas, dan lainnya</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h1 className="font-bold my-3">
+              Gathering → services for managing company gatherings such as
+              family gatherings, employee gatherings, customer gatherings, and
+              so on (Gathering Organizer). Include:
+            </h1>
+            <div className="ml-5">
+              <ul className="list-[circle]">
+                <li>Transport</li>
+                <li>Eat</li>
+                <li>Place</li>
+                <li>Rundown acara</li>
+                <li>Backdrop</li>
+                <li>MC</li>
+                <li>Photographer & Videographer</li>
+                <li>Fun game</li>
+              </ul>
             </div>
           </div>
         </div>

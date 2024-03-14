@@ -62,99 +62,26 @@ export default function Index() {
 
       <div className="grid lg:grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-10">
         <div className="text-justify">
-          <h1 className="font-bold text-3xl">System Management</h1>
+          <h1 className="font-bold text-3xl">Printing Management</h1>
           <h3 className="font-light text-sm">
-            Management systems describe the way companies organize themselves in
-            their structures and processes to act systematically, ensure smooth
-            processes, and achieve planned results. Modern management systems
-            usually follow the PDCA (Plan-Do-Check-Act) cycle of planning,
-            implementing, reviewing, and improving.
+            Is an offset printing and digital printing service. Products that we
+            can print both offset and digital printing are: brochure/flyer
+            printing, company profile, cartoonama, idcard, sticker, banner,
+            neonbox, merchandise, billboard, packaging, and so on.
           </h3>
           <div className="mt-5">
-            <h1 className="font-bold">Warehouse Management System (WMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
             <div className="grid grid-cols-2">
               <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
+                <h1 className="text-xl font-bold mt-3">Include :</h1>
                 <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="">
-            <h1 className="mt-5 font-bold">Logistic Management System (LMS)</h1>
-            <p>
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-5">
-            <h1 className="font-bold">Sales Management System (SMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
+                  <li>Min. 50 pcs</li>
+                  <li>
+                    Free Sample specifically for merchandise, brochures/fliers,
+                    stickers{' '}
+                  </li>
+                  <li>Includ tracking</li>
+                  <li>Pricelist</li>
+                  <li>E-katalog</li>
                 </ul>
               </div>
             </div>

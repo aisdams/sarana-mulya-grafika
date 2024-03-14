@@ -81,101 +81,157 @@ export default function Index() {
             usually follow the PDCA (Plan-Do-Check-Act) cycle of planning,
             implementing, reviewing, and improving.
           </h3>
-          <div className="mt-5">
-            <h1 className="font-bold">Warehouse Management System (WMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="">
-            <h1 className="mt-5 font-bold">Logistic Management System (LMS)</h1>
-            <p>
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-5">
-            <h1 className="font-bold">Sales Management System (SMS)</h1>
-            <p className="font-light text-sm">
-              Merupakan sistem operasional yang berfokus pada aktivitas gudang
-              perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
-              (web-based).
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Fitur :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Audit trail</li>
-                  <li>Elastic search</li>
-                  <li>Password hashing</li>
-                  <li>Scan and barcode</li>
-                  <li>Dashboard analytics</li>
-                </ul>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-bold mt-3">Excellence :</h1>
-                <ul className="list-[circle] ml-5 font-light text-sm">
-                  <li>Dashboard </li>
-                  <li>Customizable </li>
-                  <li>Userfriendly</li>
-                  <li>Compatible to any device</li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="">
           <h1>Download Brochure</h1>
           <div className="flex gap-2">
             <Button className="bg-blueseaprimary">Download PDF</Button>
             <Button className="bg-blueseaprimary">Download DOCS</Button>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-[min(90%,1280px)] mx-auto grid grid-cols-2 gap-8">
+        <div className="mt-5">
+          <h1 className="font-bold">Warehouse Management System (WMS)</h1>
+          <p className="font-light text-sm">
+            Merupakan sistem operasional yang berfokus pada aktivitas gudang
+            perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
+            (web-based).
+          </p>
+          <div className="grid grid-cols-2">
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Fitur :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Audit trail</li>
+                <li>Elastic search</li>
+                <li>Password hashing</li>
+                <li>Scan and barcode</li>
+                <li>Dashboard analytics</li>
+              </ul>
+            </div>
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Excellence :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Dashboard </li>
+                <li>Customizable </li>
+                <li>Userfriendly</li>
+                <li>Compatible to any device</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="">
+          <h1 className="mt-5 font-bold">Logistic Management System (LMS)</h1>
+          <p className="text-sm font-light">
+            Merupakan sistem operasional yang berfokus pada aktivitas gudang
+            perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
+            (web-based).
+          </p>
+          <div className="grid grid-cols-2">
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Fitur :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Audit trail</li>
+                <li>Elastic search</li>
+                <li>Password hashing</li>
+                <li>Scan and barcode</li>
+                <li>Dashboard analytics</li>
+              </ul>
+            </div>
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Excellence :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Dashboard </li>
+                <li>Customizable </li>
+                <li>Userfriendly</li>
+                <li>Compatible to any device</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h1 className="font-bold">Sales Management System (SMS)</h1>
+          <p className="font-light text-sm">
+            Merupakan sistem operasional yang berfokus pada aktivitas gudang
+            perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
+            (web-based).
+          </p>
+          <div className="grid grid-cols-2">
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Fitur :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Audit trail</li>
+                <li>Elastic search</li>
+                <li>Password hashing</li>
+                <li>Scan and barcode</li>
+                <li>Dashboard analytics</li>
+              </ul>
+            </div>
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Excellence :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Dashboard </li>
+                <li>Customizable </li>
+                <li>Userfriendly</li>
+                <li>Compatible to any device</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="font-bold">
+            Human Resource Information System (HRIS)
+          </h1>
+          <p className="font-light text-sm">
+            Merupakan sistem operasional yang berfokus pada aktivitas gudang
+            perusahaan yang terintegrasi dan terdigitalisasi dengan sistem
+            (web-based).
+          </p>
+          <div className="grid grid-cols-2">
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Fitur :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Attendance management</li>
+                <li>Payroll management</li>
+                <li>Dashboard analytics</li>
+                <li>KPI Report</li>
+              </ul>
+            </div>
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Excellence :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>Userfriendly</li>
+                <li>Customizable</li>
+                <li>Dashboard</li>
+                <li>Compatible to any device</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h1 className="font-bold">Website</h1>
+          <p className="font-light text-sm">
+            It is a website creation service through a coding system with
+            various designs and features desired.
+          </p>
+          <div className="grid grid-cols-2">
+            <div className="">
+              <h1 className="text-xl font-bold mt-3">Fitur :</h1>
+              <ul className="list-[circle] ml-5 font-light text-sm">
+                <li>CMS (Content management system)</li>
+                <li>Free 3x revisi</li>
+                <li>Free 5 Copywriting blog</li>
+                <li>Helpdesk 24/7</li>
+                <li>Domain Expantion</li>
+                <li>Domain Expantion</li>
+                <li>Design (Elemen, Gambar, Warna, Font, Grafik),</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -232,6 +288,10 @@ export default function Index() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="galerry">
+        <h1 className="text-4xl tracking-widest">Gallery</h1>
       </div>
     </div>
   );

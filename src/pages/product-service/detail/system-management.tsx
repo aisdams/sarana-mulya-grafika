@@ -22,7 +22,7 @@ export default function Index() {
           </h1>
         </div>
       </div>
-
+      {/* 
       <div className="absolute bottom-[30%] mx-auto w-full z-40">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
           <path
@@ -31,10 +31,14 @@ export default function Index() {
             d="M0,64L48,64C96,64,192,64,288,69.3C384,75,480,85,576,96C672,107,768,117,864,133.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
-      </div>
+      </div> */}
 
-      <div className="flex flex-1 w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between">
-        <Image src={ServiceImageDetail} alt="" className="rounded-[20px]" />
+      <div className="lg:flex flex-1 w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-20">
+        <Image
+          src={ServiceImageDetail}
+          alt=""
+          className="rounded-[20px] opacity-50"
+        />
 
         <div className="text-white mt-16 w-full grid">
           <h1 className="mb-3 font-bold">All Services</h1>
@@ -67,7 +71,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="grid grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-10">
+      <div className="grid lg:grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between mt-10">
         <div className="text-justify">
           <h1 className="font-bold text-3xl">System Management</h1>
           <h3 className="font-light text-sm">
@@ -176,12 +180,12 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="grid grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between my-20">
+      <div className="grid lg:grid-cols-[1.3fr_.7fr] w-[min(90%,1280px)] mx-auto items-start gap-10 justify-between my-20">
         <div className="">
           <h1 className="font-bold text-3xl mb-5">Benefits With Our Service</h1>
-          <div className="flex gap-2 mt-5">
+          <div className="sm:flex grid gap-2 mt-5">
             <div className="flex gap-3">
-              <div className="bg-blueseascondary text-white p-7 rounded-xl">
+              <div className="bg-blueseascondary text-white p-7 rounded-xl lg:h-auto h-max">
                 <Lightbulb className="text-3xl" />
               </div>
               <div className="block">
@@ -194,7 +198,7 @@ export default function Index() {
             </div>
 
             <div className="flex gap-3">
-              <div className="bg-blueseascondary text-white p-7 rounded-xl">
+              <div className="bg-blueseascondary text-white p-7 rounded-xl lg:h-auto h-max">
                 <Webhook className="text-3xl" />
               </div>
               <div className="block">
@@ -212,9 +216,21 @@ export default function Index() {
           <Image
             src={ImageCommunication}
             alt=""
-            className="w-8/12 h-[25rem] object-cover"
+            className="w-full h-[25rem] object-cover"
           />
-          <div className="bg-black/50 w-8/12 h-[25rem] absolute top-0"></div>
+          <div className="bg-black/50  w-full h-[25rem] absolute top-0"></div>
+          <div className="absolute top-[40%] left-0 right-0 grid justify-center items-center content-center">
+            <h1 className="font-bold text-3xl mb-5">Get Offers To 49%</h1>
+            <a
+              href="#_"
+              className="relative inline-flex items-center justify-start text-white px-6 py-1 overflow-hidden font-medium transition-all bg-blueseaprimary rounded hover:bg-white group w-max mx-auto"
+            >
+              <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#01324d] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+              <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">
+                Get Now
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ import Link from 'next/link';
 export default function ProductService() {
   return (
     <div className="relative text-center my-32">
-      <h1 className="font-bold text-3xl uppercase w-max mx-auto mb-3">
+      <h1 className="font-bold lg:text-3xl text-2xl uppercase w-[min(90%,1280px)] mx-auto mb-3">
         Product & Services
       </h1>
       <h3 className="text-sm font-light">
@@ -34,6 +34,10 @@ export default function ProductService() {
           slidesPerView={3}
           mousewheel={true}
           breakpoints={{
+            290: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
             320: {
               slidesPerView: 1,
               spaceBetween: 50,
@@ -43,7 +47,7 @@ export default function ProductService() {
               spaceBetween: 50,
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 50,
             },
             1024: {
@@ -209,7 +213,7 @@ export default function ProductService() {
         <Image
           src={ArrowImage}
           alt=""
-          className="w-32 absolute top-0 right-0 brightness-0 invert-[1] z-[10]"
+          className="w-32 absolute top-0 right-0 brightness-0 invert-[1] z-[10] lg:grid hidden"
         />
       </div>
     </div>

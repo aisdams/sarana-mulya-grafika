@@ -51,7 +51,7 @@ export default function Index() {
             className="w-full h-[450px] mb-20 mx-auto grid text-center object-cover opacity-55"
             alt=""
           />
-          <div className="absolute top-1/2 left-0 right-0 text-white">
+          <div className="absolute top-1/2 right-0 left-0 mx-auto grid w-full  text-center text-white">
             <h3 className="tracking-[6px] mb-3">Blog Details</h3>
             <h1 className="font-bold lg:text-5xl text-3xl">SMG!</h1>
           </div>

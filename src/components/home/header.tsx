@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import ImageHeader from '/public/img/company-header.png';
-import ImageScrol from '/public/img/buttonscroll.svg';
-import { Button } from '../ui/button';
-import BtnPlay from '/public/img/btnplayhead.png';
-import stylesHeader from '../../styles/header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '../ui/button';
+import RobotGif from '/public/img/robot.gif';
+import BtnPlay from '/public/img/btnplayhead.png';
+import React, { useEffect, useState } from 'react';
+import ImageScrol from '/public/img/buttonscroll.svg';
+import ImageHeader from '/public/img/company-header.png';
+import stylesHeader from '../../styles/header.module.css';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,9 @@ export default function Header() {
   };
 
   return (
-    <div className="grid lg:grid-cols-2 items-center justify-between gap-5 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full !h-screen">
+    <div className="grid lg:grid-cols-2 items-center justify-between gap-5 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full lg:!h-screen h-[90vh] mb-10">
       <div className="relative text-center mx-auto justify-start !items-center px-5">
-        <div className="text-5xl font-bold mb-8 flex gap-3 lg:text-left text-center lg:items-left lg:justify-start items-center justify-center">
+        <div className="sm:text-5xl text-4xl font-bold mb-8 lg:flex grid gap-3 lg:text-left sm:text-center text-center lg:items-left lg:justify-start items-center sm:justify-center">
           Sarana Mulya{' '}
           <h3
             className={['text-blueseaprimary', stylesHeader.textheader].join(
@@ -32,7 +33,7 @@ export default function Header() {
           people in Indonesia to improve the quality level of your business. We
           offer a wide selection of products and services.
         </h3>
-        <div className="flex gap-5 lg:items-start  items-center mx-0 lg:mx-0 mx-auto w-full lg:justify-start justify-center lg:items-center">
+        <div className="sm:flex md:flex grid gap-5 lg:items-start  items-center mx-0 lg:mx-0 w-full lg:justify-start justify-center lg:items-center">
           <a
             href="#_"
             className="relative inline-flex items-center justify-start text-white px-6 py-1 overflow-hidden font-medium transition-all bg-blueseaprimary rounded hover:bg-white group"
@@ -50,7 +51,7 @@ export default function Header() {
             <h1>See How We Work</h1>
           </div>
         </div>
-        <div className="absolute lg:right-0 left-1/2 -bottom-24 mx-auto justify-center text-center grid cursor-pointer">
+        <div className="absolute lg:right-0 left-[45%] -bottom-24 mx-auto justify-center text-center grid cursor-pointer">
           <Link href="#aboutus">
             <Image
               src={ImageScrol}
@@ -65,6 +66,14 @@ export default function Header() {
       </div>
       <div className="absolute -top-8 right-0 z-[-5] lg:grid hidden">
         <Image src={ImageHeader} alt="" className="h-[36rem] w-[50rem]" />
+      </div>
+
+      <div className="absolute sm:left-0 left-[42%] md:right-0 justify-center content-center place-content-center lg:top-32 top-14 lg:hidden grid">
+        <Image
+          src={RobotGif}
+          alt=""
+          className="w-32 grayscale transition-all duration-500"
+        />
       </div>
 
       {isOpen && (

@@ -63,17 +63,17 @@ export default function About() {
 
       <div className="mx-auto w-[min]">
         <h1 className="text-blueseaprimary">About Us</h1>
-        <div className="uppercase font-bold text-3xl mb-5 ">
+        <div className="uppercase font-bold lg:text-3xl text-xl mb-5 ">
           ABOUT WEBTECK IT SOLUTIONS We Are Increasing Business Success With{' '}
           <span className="text-blueseaprimary">Technology</span>
         </div>
-        <h3 className="mb-3 font-light text-sm">
+        <h3 className="mb-3 font-light text-sm sm:text-left text-justify">
           Sarana Mulya Grafika or SMG is a company engaged in the creative
           industry, supporting business people in Indonesia to increase the
           quality level of your business. We offer a wide selection of products
           and services
         </h3>
-        <ul className="list-[circle] gap-5">
+        <ul className="lg:list-[circle] gap-5 sm:text-left text-justify">
           <li className=" text-sm mb-2">
             <span className="font-bold">First</span>, System Management, in the
             ever-evolving digital era, efficient system management is essential.

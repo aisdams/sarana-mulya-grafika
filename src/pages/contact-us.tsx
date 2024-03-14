@@ -19,7 +19,7 @@ export default function Index() {
           </h1>
         </div>
       </div>
-      <div className="absolute bottom-[30%] mx-auto w-full z-40">
+      {/* <div className="absolute bottom-[30%] mx-auto w-full z-40">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
           <path
             fill="#0f1a24"
@@ -27,9 +27,9 @@ export default function Index() {
             d="M0,64L48,64C96,64,192,64,288,69.3C384,75,480,85,576,96C672,107,768,117,864,133.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
-      </div>
+      </div> */}
 
-      <div className="max-w-6xl mx-auto mt-14 mb-32 font-[sans-serif] text-[#011c2b]">
+      <div className="w-[min(90%,1280px)] mx-auto mt-14 mb-32 font-[sans-serif] text-[#011c2b]">
         <div className="text-center px-6">
           <h2 className="text-3xl font-extrabold text-white">Contact Us</h2>
           <p className="text-sm text-gray-400 mt-3">

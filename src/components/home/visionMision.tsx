@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import Image from 'next/image';
+import React, { useState } from 'react';
 import { FaPlay } from 'react-icons/fa';
 import ImgValue from '/public/img/imgvalue.jpg';
 import ImgValue2 from '/public/img/imgvalue2.jpg';
@@ -14,7 +14,7 @@ export default function VisionMision() {
   return (
     <div className="w-[min(90%,1280px)] mx-auto">
       <div className="grid lg:grid-cols-2 gap-8 items-center">
-        <div className="ml-5">
+        <div className="lg:ml-5">
           <h1 className="font-bold text-3xl uppercase mb-5 w-max">
             Vision & Mission
           </h1>

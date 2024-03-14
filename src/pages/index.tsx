@@ -98,10 +98,10 @@ export default function Home({
         <Header />
         <div className="relative lg:mb-10 mb-10">
           <div className="mx-auto w-[min(90%,1280px)]">
-            <h1 className="font-bold text-left lg:text-center uppercase w-max lg:mx-auto grid text-blueseaprimary">
+            <h1 className="font-bold text-left lg:text-center uppercase w-max lg:mx-0 mx-auto grid text-blueseaprimary">
               Excellence
             </h1>
-            <p className="text-3xl font-bold lg:text-center text-left uppercase w-full mx-auto grid">
+            <p className="lg:text-3xl text-xl font-bold text-center uppercase w-full mx-auto grid">
               Our company will always provide satisfaction <br /> and comfort
               for our customers
             </p>
@@ -152,7 +152,9 @@ export default function Home({
         <VisionMision />
         <ProductService />
         <div className="grid w-[min(90%,1280px)] mx-auto justify-center items-center mt-10">
-          <h3 className="text-center text-blueseaprimary">NEWS & ARTICLES</h3>
+          <h3 className="sm:text-left md:text-center text-center lg:text-center text-blueseaprimary">
+            NEWS & ARTICLES
+          </h3>
           <h1 className="text-center font-bold text-3xl">
             Get Every Single Update{' '}
             <span className="text-blueseaprimary">Blog</span>

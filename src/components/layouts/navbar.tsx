@@ -29,7 +29,7 @@ export default function Navbar() {
     enableSmoothScroll();
 
     const handleResize = () => {
-      setIsMobileView(window.innerWidth < 768);
+      setIsMobileView(window.innerWidth < 1024);
     };
 
     handleResize();
@@ -54,7 +54,7 @@ export default function Navbar() {
       {isMobileView ? (
         <div className="flex items-center">
           <Sheet>
-            <SheetTrigger className="flex justify-between items-center gap-8 w-full px-10">
+            <SheetTrigger className="flex justify-between items-center gap-8 w-full lg:px-10 px-5">
               <Image src={ImageLogo} alt="" className="w-14 h-14" />
               <IoIosMenu className="text-2xl text-white" />
             </SheetTrigger>

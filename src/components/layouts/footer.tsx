@@ -24,10 +24,10 @@ export default function Footer() {
         <Image
           src={ImageFooter}
           alt=""
-          className="w-full object-cover h-[30rem]"
+          className="w-full object-cover lg:h-[30rem] h-[72rem]"
         />
         <div className="bg-[#0f1a24]/60 w-full h-[30rem] absolute top-0">
-          <div className="lg:flex grid w-[min(90%,1280px)] mx-auto justify-between px-20 items-center gap-10 pt-10">
+          <div className="lg:flex block w-[min(90%,1280px)] mx-auto justify-between lg:px-20 px-0 items-center gap-10 pt-10">
             <div className="border-r-2 border-white/15 pr-44">
               <Image
                 src={LogoImg}
@@ -35,25 +35,25 @@ export default function Footer() {
                 className="w-20 h-20 brightness-0 invert-[100]"
               />
             </div>
-            <div className="grid lg:flex items-center gap-5">
+            <div className="grid lg:flex items-center gap-5 w-full">
               <div className="grid">
                 <h1 className="font-bold text-3xl">News Subscription</h1>
                 <p className="font-light text-sm">
                   Get Latest Deals from Waker’s Inbox & Subscribe Now
                 </p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 w-full">
                 <Input
                   placeholder="Email Address"
                   type="email"
-                  className="w-72"
+                  className="lg:w-72 w-full"
                 />
                 <Button className="bg-blueseaprimary">Subscribe</Button>
               </div>
             </div>
           </div>
           <hr className="w-full h-1 border-white/15 mt-5" />
-          <div className="grid lg:grid-cols-4 gap-5 w-[min(90%,1280px)] mx-auto px-20 mt-20">
+          <div className="grid lg:grid-cols-4 gap-5 w-[min(90%,1280px)] mx-auto lg:px-20 px-0 mt-20">
             <div className="w-full">
               <h1 className="font-bold">ABOUT COMPANY</h1>
               <div className="flex items-center">
@@ -225,7 +225,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black/30 backdrop-blur-lg  p-3 text-sm lg:grid hidden">
+      <div className="bg-black/30 backdrop-blur-lg  p-3 text-sm xl:grid hidden">
         <div className="mx-auto w-[min(90%,1280px)] flex justify-between px-20">
           <h1>Copyright 2024 Sarana Mulya Grafika. All Rights Reserved.</h1>
           <div className="flex gap-3">

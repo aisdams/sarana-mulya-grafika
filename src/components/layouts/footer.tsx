@@ -32,13 +32,13 @@ export default function Footer() {
               <Image
                 src={LogoImg}
                 alt=""
-                className="w-20 h-20 brightness-0 invert-[100]"
+                className="w-28 h-20 brightness-0 invert-[100]"
               />
             </div>
             <div className="grid lg:flex items-center gap-5 w-full">
               <div className="grid">
                 <h1 className="font-bold text-3xl">News Subscription</h1>
-                <p className="font-light text-sm">
+                <p className="font-light text-xs text-gray-300">
                   Get Latest Deals from Waker’s Inbox & Subscribe Now
                 </p>
               </div>

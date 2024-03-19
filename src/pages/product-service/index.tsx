@@ -1,14 +1,14 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '@/components/layouts/navbar';
-import productImage from '/public/img/productservice.jpg';
-import imageProduct1 from '/public/img/System-Management-.jpg';
-import imageProduct2 from '/public/img/social-media-mangement.jpg';
-import imageProduct3 from '/public/img/design-management.jpg';
-import imageProduct4 from '/public/img/Printing-management.jpg';
-import imageProduct5 from '/public/img/event-management.png';
 import Footer from '@/components/layouts/footer';
-import Link from 'next/link';
+import productImage from '/public/img/productservice.jpg';
+import imageProduct5 from '/public/img/event-management.png';
+import imageProduct3 from '/public/img/design-management.jpg';
+import imageProduct1 from '/public/img/System-Management-.jpg';
+import imageProduct4 from '/public/img/Printing-management.jpg';
+import imageProduct2 from '/public/img/social-media-mangement.jpg';
 
 export default function ProductAndService() {
   return (

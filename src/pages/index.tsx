@@ -222,5 +222,3 @@ export default function Home({
     </>
   );
 }
-// pak maaf saya ingin mengajukan negosiasi
-// projectnya kerena saya tidak mengerti bet tetapi saya akan memasangkan game request nya

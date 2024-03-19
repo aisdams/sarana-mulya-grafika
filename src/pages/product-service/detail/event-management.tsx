@@ -1,13 +1,15 @@
-import React from 'react';
 import Image from 'next/image';
+import React, { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import productImage from '/public/img/event-management.png';
-import ServiceImageDetail from '/public/img/servicedetail.jpg';
 import { Button } from '@/components/ui/button';
 import { Lightbulb, Webhook } from 'lucide-react';
+import { FreeMode, Thumbs } from 'swiper/modules';
+import productImage from '/public/img/event-management.png';
+import ServiceImageDetail from '/public/img/servicedetail.jpg';
 import ImageCommunication from '/public/img/communication.jpg';
 
 export default function Index() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <div>
       <div className="relative">
@@ -207,6 +209,10 @@ export default function Index() {
               </span>
             </a>
           </div>
+        </div>
+
+        <div className="">
+          <h1>Gallery</h1>
         </div>
       </div>
     </div>

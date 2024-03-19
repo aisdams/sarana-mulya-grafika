@@ -70,7 +70,9 @@ export default function Footer() {
                   <FaFacebookF />
                 </div>
                 <div className="border border-white rounded-full p-2">
-                  <FaInstagram />
+                  <Link href="https://www.instagram.com/saranamulyagrafika/">
+                    <FaInstagram />
+                  </Link>
                 </div>
                 <div className="border border-white rounded-full p-2">
                   <FaTwitter />

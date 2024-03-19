@@ -290,9 +290,9 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="galerry">
+      {/* <div className="galerry">
         <h1 className="text-4xl tracking-widest">Gallery</h1>
-      </div>
+      </div> */}
     </div>
   );
 }

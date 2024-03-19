@@ -1,7 +1,8 @@
 const NavbarData = [
   {
     title: 'Home',
-    link: '/',
+    link: '/#home',
+    scrollId: '#home',
   },
   {
     title: 'About Us',

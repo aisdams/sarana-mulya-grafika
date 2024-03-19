@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import contactImage from '/public/img/contactus.jpg';
 import Footer from '@/components/layouts/footer';
 import Navbar from '@/components/layouts/navbar';
+import contactImage from '/public/img/contactus.jpg';
 
 export default function Index() {
   return (
@@ -37,7 +37,7 @@ export default function Index() {
           </p>
         </div>
         <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-8 bg-white/5 backdrop-blur-xl">
-          <div className="bg-[#1a3d86] rounded-lg p-6 max-lg:text-center">
+          <div className="bg-[#163879] rounded-lg p-6 max-lg:text-center">
             <h2 className="text-xl font-bold text-white">
               Contact Information
             </h2>

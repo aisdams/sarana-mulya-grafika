@@ -16,7 +16,10 @@ export default function Header() {
   };
 
   return (
-    <div className="grid lg:grid-cols-2 items-center justify-between gap-5 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full lg:!h-screen h-[90vh] mb-10">
+    <div
+      className="grid lg:grid-cols-2 items-center justify-between gap-5 pt-5 lg:mx-auto lg:w-[min(90%,1280px)] w-full lg:!h-screen h-[90vh] mb-10"
+      id="home"
+    >
       <div className="relative text-center mx-auto justify-start !items-center px-5">
         <div className="sm:text-5xl text-4xl font-bold mb-8 lg:flex grid gap-3 lg:text-left sm:text-center text-center lg:items-left lg:justify-start items-center sm:justify-center">
           Sarana Mulya{' '}
@@ -64,17 +67,21 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div className="absolute top-0 right-0 z-[-5] lg:grid hidden">
-        <Image src={ImageHeader} alt="" className="h-[36rem] w-[50rem]" />
+      <div className="absolute lg:top-0 -top-[5rem] lg:opacity-100 opacity-40 right-0 z-[-5] lg:grid object-cover bg-cover">
+        <Image
+          src={ImageHeader}
+          alt=""
+          className="h-[36rem] object-cover bg-cover lg:w-[50rem] w-full"
+        />
       </div>
 
-      <div className="absolute sm:left-0 left-[42%] md:right-0 justify-center content-center place-content-center lg:top-32 top-14 lg:hidden grid">
+      {/* <div className="absolute sm:left-0 left-[42%] md:right-0 justify-center content-center place-content-center lg:top-32 top-14 lg:hidden grid">
         <Image
           src={RobotGif}
           alt=""
           className="w-32 grayscale transition-all duration-500"
         />
-      </div>
+      </div> */}
 
       {isOpen && (
         <div

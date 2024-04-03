@@ -58,7 +58,6 @@ export default function VisionMision() {
           </div>
         </div>
       </div>
-
       {isOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center z-50"

@@ -11,7 +11,17 @@ const NavbarData = [
   },
   {
     title: 'Information',
-    link: '#',
+    link: '/information/perizinan',
+    children: [
+      {
+        title: 'Our Team',
+        link: '/our-team',
+      },
+      {
+        title: 'Perizinan',
+        link: '/perizinan',
+      },
+    ],
   },
   {
     title: 'Product & Service',

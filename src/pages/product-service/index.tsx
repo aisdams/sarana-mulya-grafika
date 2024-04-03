@@ -25,6 +25,17 @@ export default function ProductAndService() {
           </h1>
         </div>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="absolute lg:bottom-[12rem] lg:z-50 hidden lg:grid"
+      >
+        <path
+          fill="#011636"
+          fill-opacity="1"
+          d="M0,224L34.3,208C68.6,192,137,160,206,170.7C274.3,181,343,235,411,245.3C480,256,549,224,617,218.7C685.7,213,754,235,823,224C891.4,213,960,171,1029,138.7C1097.1,107,1166,85,1234,117.3C1302.9,149,1371,235,1406,277.3L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
 
       <h1 className="my-20 text-center text-3xl font-bold">Product Service</h1>
       <div className="grid lg:grid-cols-3 mx-auto justify-center items-start w-[min(80%,1280px)] gap-5">
@@ -84,8 +95,8 @@ export default function ProductAndService() {
         </div>
       </div>
 
-      <div className="lg:flex grid mx-auto justify-center items-start w-[min(90%,1280px)] gap-5 mt-20 mb-20">
-        <div className="w-[25rem]">
+      <div className="lg:flex grid justify-center items-start w-[min(90%,1280px)] gap-5 lg:mt-20 mt-8 mb-20 lg:mx-auto mx-10">
+        <div className="lg:w-[25rem] w-[90%]">
           <Link href="/product-service/detail/printing-management">
             <Image
               src={imageProduct4}
@@ -104,7 +115,7 @@ export default function ProductAndService() {
             </article>
           </Link>
         </div>
-        <div className="w-[25rem]">
+        <div className="lg:w-[25rem] w-[90%]">
           <Link href="/product-service/detail/event-management">
             <Image
               src={imageProduct5}

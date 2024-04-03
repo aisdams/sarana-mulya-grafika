@@ -273,3 +273,8 @@ img {
 ::ng-deep .swiper-button-next:after {
   --swiper-navigation-size: 15px;
 }
+
+::placeholder {
+  color: #011636 !important;
+  opacity: 1;
+}

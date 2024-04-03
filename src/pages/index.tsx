@@ -101,11 +101,11 @@ export default function Home({
             <h1 className="font-bold text-left lg:text-center uppercase w-max lg:mx-0 mx-auto grid text-blueseaprimary">
               Excellence
             </h1>
-            <p className="lg:text-3xl text-xl font-bold text-center uppercase w-full mx-auto grid">
+            <p className="lg:text-3xl text-sm font-bold text-center uppercase w-full mx-auto grid">
               Our company will always provide satisfaction <br /> and comfort
               for our customers
             </p>
-            <div className="grid lg:grid-cols-3 items-start gap-5 mt-16 mx-auto text-center">
+            <div className="grid lg:grid-cols-3 items-start gap-5 mt-16 mx-auto text-center z-[5]">
               <div className="grid items-center gap-3">
                 <div className="bg-blueseaprimary/50 text-white px-3 mx-auto rounded-full w-[50px] h-12">
                   <Lightbulb className="text-2xl my-3 mx-auto" />
@@ -144,7 +144,7 @@ export default function Home({
             <Image
               src={ImageExcelence}
               alt=""
-              className="absolute top-0 lg:right-0 left-auto lg:transform-none lg:scale-0 transform scale-x-[-1]"
+              className="absolute top-0 lg:right-0 left-auto lg:transform-none lg:scale-0 transform scale-x-[-1] z-0"
             />
           </div>
         </div>

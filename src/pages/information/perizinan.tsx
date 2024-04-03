@@ -20,7 +20,7 @@ export default function index() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="absolute lg:bottom-[12rem] z-50 hidden"
+        className="absolute lg:bottom-[12rem] lg:z-50 lg:grid hidden"
       >
         <path
           fill="#011636"
